@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: black;
+                font-family: sans-serif;
+                color: white;
+            }
+            h1 {
+                padding: 0;
+                margin: 0;
+                font-size: 1em;
+            }
+            table {
+                width: 100%;
+            }
+            td, th {
+                text-align: left;
+            }
+            th {
+                background-color: #cccccc;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <table cellPadding="4" cellSpacing="0">
+            <thead>
+                <tr>
+                    <th style="width: 1%;">Meta</th>
+                    <th style="width: 99%;">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>TITLE       </td><td>{{TITLE       }}</td></tr>
+                <tr><td>ARTIST      </td><td>{{ARTIST      }}</td></tr>
+                <tr><td>GENRE       </td><td>{{GENRE       }}</td></tr>
+                <tr><td>COPYRIGHT   </td><td>{{COPYRIGHT   }}</td></tr>
+                <tr><td>ALBUM       </td><td>{{ALBUM       }}</td></tr>
+                <tr><td>TRACK_NUMBER</td><td>{{TRACK_NUMBER}}</td></tr>
+                <tr><td>DESCRIPTION </td><td>{{DESCRIPTION }}</td></tr>
+                <tr><td>RATING      </td><td>{{RATING      }}</td></tr>
+                <tr><td>DATE        </td><td>{{DATE        }}</td></tr>
+                <tr><td>SETTING     </td><td>{{SETTING     }}</td></tr>
+                <tr><td>URL         </td><td>{{URL         }}</td></tr>
+                <tr><td>LANGUAGE    </td><td>{{LANGUAGE    }}</td></tr>
+                <tr><td>NOW_PLAYING </td><td>{{NOW_PLAYING }}</td></tr>
+                <tr><td>PUBLISHER   </td><td>{{PUBLISHER   }}</td></tr>
+                <tr><td>ENCODED_BY  </td><td>{{ENCODED_BY  }}</td></tr>
+                <tr><td>ARTWORK_URL </td><td>{{ARTWORK_URL }}</td></tr>
+                {% if (ARTWORK_URL) %}
+                <tr><td><td><img src="{{ARTWORK_URL}}"></td></td></tr>
+                {% endif %}
+                <tr><td>TRACK_ID    </td><td>{{TRACK_ID    }}</td></tr>
+                <tr><td>TRACK_TOTAL </td><td>{{TRACK_TOTAL }}</td></tr>
+                <tr><td>DIRECTOR    </td><td>{{DIRECTOR    }}</td></tr>
+                <tr><td>SEASON      </td><td>{{SEASON      }}</td></tr>
+                <tr><td>EPISODE     </td><td>{{EPISODE     }}</td></tr>
+                <tr><td>SHOW_NAME   </td><td>{{SHOW_NAME   }}</td></tr>
+                <tr><td>ACTORS      </td><td>{{ACTORS      }}</td></tr>
+                <tr><td>ALBUM_ARTIST</td><td>{{ALBUM_ARTIST}}</td></tr>
+                <tr><td>DISC_NUMBER </td><td>{{DISC_NUMBER }}</td></tr>
+                <tr><td>DISC_TOTAL  </td><td>{{DISC_TOTAL  }}</td></tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: black;
+                font-family: sans-serif;
+                color: white;
+            }
+            h1 {
+                padding: 0;
+                margin: 0;
+                margin-bottom: 5px;
+                font-size: 1em;
+            }
+            table {
+                width: 100%;
+            }
+            td, th {
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #cccccc;
+                color: black;
+            }
+            div.tracks {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tracks">
+            <h1>Audio Tracks</h1>
+            <table cellPadding="4" cellSpacing="0">
+                <thead>
+                    <tr>
+                        <th>Codec</th>
+                        <th>Original Codec</th>
+                        <th>ID</th>
+                        <th>Profile</th>
+                        <th>Level</th>
+                        <th>Bit Rate</th>
+                        <th>Language</th>
+                        <th>Description</th>
+                        <th>Codec Description</th>
+                        <th>Channels</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for info in audio %}
+                    <tr>
+                        <td>{{ info.codecName }}</td>
+                        <td>{{ info.originalCodecName }}</td>
+                        <td>{{ info.id }}</td>
+                        <td>{{ info.profile}}</td>
+                        <td>{{ info.level }}</td>
+                        <td>{{ info.bitRate }}</td>
+                        <td>{{ info.language }}</td>
+                        <td>{{ info.description }}</td>
+                        <td>{{ info.codecDescription }}</td>
+                        <td>{{ info.channels }}</td>
+                        <td>{{ info.rate }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="tracks">
+            <h1>Video Tracks</h1>
+            <table cellPadding="4" cellSpacing="0">
+                <thead>
+                    <tr>
+                        <th>Codec</th>
+                        <th>Original Codec</th>
+                        <th>ID</th>
+                        <th>Profile</th>
+                        <th>Level</th>
+                        <th>Bit Rate</th>
+                        <th>Language</th>
+                        <th>Description</th>
+                        <th>Codec Description</th>
+                        <th>Size</th>
+                        <th>SAR</th>
+                        <th>Frame Rate</th>
+                        <th>Orientation</th>
+                        <th>Projection</th>
+                        <th>Yaw</th>
+                        <th>Pitch</th>
+                        <th>Roll</th>
+                        <th>FOV</th>
+                        {# <th>Multiview</th> FIXME no multiview until LibVLC 4.0.0 #}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for info in video %}
+                    <tr>
+                        <td>{{ info.codecName }}</td>
+                        <td>{{ info.originalCodecName }}</td>
+                        <td>{{ info.id }}</td>
+                        <td>{{ info.profile}}</td>
+                        <td>{{ info.level }}</td>
+                        <td>{{ info.bitRate }}</td>
+                        <td>{{ info.language }}</td>
+                        <td>{{ info.description }}</td>
+                        <td>{{ info.codecDescription }}</td>
+                        <td>{{ info.width }} x {{ info.height }}</td>
+                        <td>{{ info.sampleAspectRatio }} : {{ info.sampleAspectRatioBase }}</td>
+                        <td>{{ info.frameRate }} : {{ info.frameRateBase }}</td>
+                        <td>{{ info.orientation }}</td>
+                        <td>{{ info.projection }}</td>
+                        <td>{{ info.yaw }}&deg;</td>
+                        <td>{{ info.pitch }}&deg;</td>
+                        <td>{{ info.roll }}&deg;</td>
+                        <td>{{ info.fov }}&deg;</td>
+                        {# <td>{{ info.multiview }}</td> #}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="tracks">
+            <h1>Text Tracks</h1>
+            <table cellPadding="4" cellSpacing="0">
+                <thead>
+                    <tr>
+                        <th>Codec</th>
+                        <th>Original Codec</th>
+                        <th>ID</th>
+                        <th>Profile</th>
+                        <th>Level</th>
+                        <th>Bit Rate</th>
+                        <th>Language</th>
+                        <th>Description</th>
+                        <th>Codec Description</th>
+                        <th>Encoding</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for info in text %}
+                    <tr>
+                        <td>{{ info.codecName }}</td>
+                        <td>{{ info.originalCodecName }}</td>
+                        <td>{{ info.id }}</td>
+                        <td>{{ info.profile}}</td>
+                        <td>{{ info.level }}</td>
+                        <td>{{ info.bitRate }}</td>
+                        <td>{{ info.language }}</td>
+                        <td>{{ info.description }}</td>
+                        <td>{{ info.codecDescription }}</td>
+                        <td>{{ info.encoding }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

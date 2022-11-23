@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: black;
+                font-family: sans-serif;
+                color: white;
+            }
+            h1 {
+                padding: 0;
+                margin: 0;
+                margin-bottom: 5px;
+                font-size: 1em;
+            }
+            table {
+                width: 100%;
+            }
+            td, th {
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #cccccc;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <table cellPadding="4" cellSpacing="0">
+            <thead>
+                <tr>
+                    <th width="1%">Stat</th>
+                    <td width="99%">Value</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Input Bytes Read</th>
+                    <td>{{ stats.inputBytesRead }}</td>
+                </tr>
+                <tr>
+                    <th>Input Bitrate</th>
+                    <td>{{ stats.inputBitrate }}</td>
+                </tr>
+                <tr>
+                    <th>Demux Bytes Read</th>
+                    <td>{{ stats.demuxBytesRead }}</td>
+                </tr>
+                <tr>
+                    <th>Demux Bitrate</th>
+                    <td>{{ stats.demuxBitrate }}</td>
+                </tr>
+                <tr>
+                    <th>Demux Corrupted</th>
+                    <td>{{ stats.demuxCorrupted }}</td>
+                </tr>
+                <tr>
+                    <th>Demux Discontinuity</th>
+                    <td>{{ stats.demuxDiscontinuity }}</td>
+                </tr>
+                <tr>
+                    <th>Decoded Video</th>
+                    <td>{{ stats.decodedVideo }}</td>
+                </tr>
+                <tr>
+                    <th>Decoded Audio</th>
+                    <td>{{ stats.decodedAudio }}</td>
+                </tr>
+                <tr>
+                    <th>Pictures Displayed</th>
+                    <td>{{ stats.picturesDisplayed }}</td>
+                </tr>
+                <tr>
+                    <th>Pictures Lost</th>
+                    <td>{{ stats.picturesLost }}</td>
+                </tr>
+                <tr>
+                    <th>Audio Buffers Played</th>
+                    <td>{{ stats.audioBuffersPlayed }}</td>
+                </tr>
+                <tr>
+                    <th>Audio Buffers Lost</th>
+                    <td>{{ stats.audioBuffersLost }}</td>
+                </tr>
+                <tr>
+                    <th>Sent Packets</th>
+                    <td>{{ stats.sentPackets }}</td>
+                </tr>
+                <tr>
+                    <th>Sent Bytes</th>
+                    <td>{{ stats.sentBytes}}</td>
+                </tr>
+                <tr>
+                    <th>Send Bitrate</th>
+                    <td>{{ stats.sendBitrate}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

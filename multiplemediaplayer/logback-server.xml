@@ -1,0 +1,34 @@
+<!--
+    The following system properties are available to be used in the logging configuration:
+
+    vlcjProPid
+    vlcjProMediaPlayerPort
+    vlcjProCallbackPort
+    vlcjProHeartbeatPort
+-->
+
+<configuration>
+    
+    <timestamp key="TIMESTAMP" datePattern="HHmmss"/>
+    
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${user.home}/vlcj-pro-logs/vlcj-pro-server_${vlcjProPid}.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%-32(%d{HH:mm:ss.SSS} [%thread]) %-5level %44logger{44} - %msg%n</pattern>
+            <!-- immediateFlush>false</immediateFlush -->
+        </encoder>
+    </appender>
+
+    <logger name="ch"                    level="ERROR"/>
+    <logger name="org"                   level="ERROR"/>
+    <logger name="com"                   level="ERROR"/>
+
+    <logger name="uk.co.caprica.vlcj"    level="DEBUG"/>
+    <logger name="uk.co.caprica.vlcjpro" level="TRACE"/>
+
+    <root level="debug">
+        <appender-ref ref="FILE"/>
+    </root>
+    
+</configuration>

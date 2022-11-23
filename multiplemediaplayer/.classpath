@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/asm-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/asm-analysis-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/asm-tree-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/asm-util-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/byte-buddy-1.10.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/checker-qual-3.12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/commons-lang3-3.12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/concurrentlinkedhashmap-lru-1.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/error_prone_annotations-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/failureaccess-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/guava-31.1-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/httpcore-4.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/j2objc-annotations-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/jna-5.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/jna-platform-5.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/jtwig-core-5.87.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/jtwig-reflection-5.87.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/libthrift-0.12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/logback-classic-1.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/logback-core-1.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/miglayout-core-5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/miglayout-swing-5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/native-streams-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/parboiled-core-1.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/parboiled-java-1.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/snakeyaml-1.30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/vlcj-4.7.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/vlcj-natives-4.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/vlcj-pro-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh Seervi/Desktop/vlcj-pro/vlcj-pro-trial-2.0.1-dist/vlcj-pro-package-2.0.1/demo/lib/vlcj-pro-demo-toolkit-1.0.0.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
